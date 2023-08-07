@@ -21,10 +21,10 @@ export const useAuthStore = defineStore('auth', {
             this.authOpen = false
         }
         ,
-        loginByFacebook() {
+        loginByGoogle() {
 
         },
-        logoutByFacebook() {
+        logoutByGoogle() {
         }
     },
 })

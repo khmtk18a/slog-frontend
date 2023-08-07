@@ -1,9 +1,10 @@
 <script setup>
 import { useRouter } from 'vue-router';
 import {ref} from 'vue'
+
 const contentBoxRef = ref()
 
-const router =useRouter()
+const router = useRouter()
 const props = defineProps(['article'])
 
 function handleRateArticle(value) {
