@@ -1,0 +1,4 @@
+T2/07/08/2023
+    Hoàn thành giao diện
+        + Thiết kế trên phần mềm mô phỏng
+        + Thiết kế giao diện đó
