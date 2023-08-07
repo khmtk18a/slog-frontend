@@ -1,10 +1,6 @@
 <script setup>
-import { useBaseStore } from '../stores/base';
 import { useAuthStore } from '../stores/auth';
-const baseStore = useBaseStore()
 const authStore = useAuthStore()
-
-
 
 </script>
 <template>
@@ -16,7 +12,7 @@ const authStore = useAuthStore()
             <span class="block text-center font-black w-full text-ttext text-[1.2rem] ">Đăng nhập</span>
             <div class="w-full mt-[1rem] flex-1  flex items-center">
                 
-                <button @click="authStore.loginByFacebook()" class="text-white w-full  mx-auto px-[1rem] py-[0.5rem] rounded-[0.5rem] bg-blue-500">Đăng nhập bằng facebook</button>
+                <button @click="authStore.loginByGoogle()" class="text-white w-full  mx-auto px-[1rem] py-[0.5rem] rounded-[0.5rem] bg-blue-500">Đăng nhập bằng Google</button>
             </div>
         </div>
     </div>

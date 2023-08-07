@@ -30,7 +30,7 @@ const menu = ref(false)
                          </button>
                     </li>
                     <li>
-                        <button @click="authStore.logoutByFacebook()" class="py-[0.5rem] w-full hover:bg-green-200 active:bg-green-400 text-ntext text-left pl-[0.5rem]" > 
+                        <button @click="authStore.logoutByGoogle()" class="py-[0.5rem] w-full hover:bg-green-200 active:bg-green-400 text-ntext text-left pl-[0.5rem]" > 
                             <i class="pi pi-icons pi-sign-out mr-[0.5rem]"></i>
                             <span>Đăng xuất</span>    
                         </button>
