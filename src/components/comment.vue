@@ -33,17 +33,6 @@
 			step kids and looking like a bully. I used a comeback
 		</div>
 		<span class="flex text-ntext ml-[3rem] mt-[0.25rem]">
-			<span
-				class="hover:bg-[rgba(0,0,0,0.1)] flex items-center text-ttext rounded-[1rem] px-[1rem] py-[0.25rem]"
-			>
-				<a href="">
-					<i class="pi pi-icons pi-angle-double-up"></i>
-				</a>
-				<span class="mx-[0.5rem]">232</span>
-				<a href="">
-					<i class="pi pi-icons pi-angle-double-down"></i>
-				</a>
-			</span>
 			<a
 				href="#/"
 				class="block mx-[0.5rem] hover:bg-[rgba(0,0,0,0.1)] px-[1rem] py-[0.25rem] rounded-[1rem]"
