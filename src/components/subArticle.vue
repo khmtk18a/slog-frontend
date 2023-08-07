@@ -1,7 +1,6 @@
 <script setup>
-import { useRouter } from 'vue-router';
+/** @type {{subArticle: Article}} */
 const props = defineProps(['subArticle'])
-const router = useRouter()
 </script>
 <template>
     <div class="w-full pr-[1rem]">

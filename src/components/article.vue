@@ -1,18 +1,23 @@
 <script setup>
 import { useRouter } from 'vue-router';
-import {ref} from 'vue'
+import { ref } from 'vue'
 
 const contentBoxRef = ref()
 
 const router = useRouter()
+
+/** @type {{article: Article}} */
 const props = defineProps(['article'])
 
+/**
+ * Up/Down article
+ * @param {number} value 
+ */
 function handleRateArticle(value) {
     console.log('handleRateArticle: ',value)
 }
 
 </script>
-
 
 <template>
 	<div
