@@ -27,13 +27,13 @@ authStore.checkLoginStatus()
 				<i class="pi pi-icons pi-bars text-[1.5rem] text-ttext"></i>
 			</button>
 			<a href="/" class="ml-[1rem]">
-				<h1 class="text-[2rem] font-[900]">Logo</h1>
+				<h1 class="text-[2rem] font-[900]">SLOG</h1>
 			</a>
 		</span>
-		<span class="relative py-[10px]">
+		<span class="relative py-[10px] ml-[2rem]">
 			<input
 				placeholder="Tìm kiếm..."
-				class="text-[1rem] pl-[2.5rem] text-ntext bg-green-100 py-[0.5rem] pr-[1rem] border-0 w-[30rem] rounded-full"
+				class="text-[1rem]  pl-[2.5rem] w-[calc(100vw-40rem)] max-sm:w-[15rem] text-ntext bg-green-100 py-[0.5rem] pr-[1rem] border-0  rounded-full"
 			/>
 			<i
 				class="pi pi-icons pi-search absolute text-[1rem] text-ntext top-[50%] translate-y-[-50%] left-[1rem]"

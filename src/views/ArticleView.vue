@@ -154,7 +154,7 @@ const sortBy = ref("New")
 			<comment></comment>
 		</div>
         </div>
-        <div class="w-[25rem]  max-md:w-full">
+        <div class="w-[20rem]  max-md:w-full">
             <div :class="{'overflow-y-hidden': !isHover}" 		
             @mouseenter="isHover = true"
             @mouseleave="isHover = false" 

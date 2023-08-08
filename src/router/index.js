@@ -23,6 +23,11 @@ const router = createRouter({
             component: () => import("../views/ArticleView.vue")
         },
         {
+            path: '/sumary',
+            name: 'sumary',
+            component: () => import("../views/SumaryView.vue")
+        },
+        {
             path: '/'
         },
         {

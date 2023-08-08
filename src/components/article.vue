@@ -1,6 +1,10 @@
 <script setup>
 import { useRouter } from 'vue-router';
 import {ref} from 'vue'
+import {useArticlesStore} from '../stores/articles'
+
+const articlesStore = useArticlesStore()
+
 const contentBoxRef = ref()
 
 const router =useRouter()
@@ -39,17 +43,20 @@ function handleRateArticle(value) {
 			</span>
 			<button class="text-red-500">Báo cáo</button>
 		</div>
-		<div ref="contentBoxRef" class="max-h-[25rem] overflow-y-hidden mt-[0.5rem]">
+		<div ref="contentBoxRef" class="max-h-[25rem] overflow-y-hidden mt-[0.5rem]" >
 			<span class="text-ttext block font-black text-[1.2rem]"
 				>{{ props.article.title }}</span
 			>
-			{{ props.article.content }}
+			<span v-if="articlesStore.viewType==0">
+
+                {{ props.article.content }}
+            </span>
 		</div>
 		<div
 			class="relative h-[4rem] mt-[-4rem] px-[1rem] w-full h-boxshadow"
-			v-if="props.article.isHiden"
+			v-if="props.article.isHiden && articlesStore.viewType==0"
 		></div>
-		<a @click.prevent="router.push(`/article/${props.article.id}`)" class="block mb-[1rem] text-blue-500" v-if="props.article.isHiden"
+		<a  @click.prevent="router.push(`/article/${props.article.id}`)" class="block mb-[1rem] text-blue-500" v-if="props.article.isHiden && articlesStore.viewType==0"
 			>Xem toàn bộ</a
 		>
 		<span class="flex text-ntext z-[20]">
@@ -57,11 +64,11 @@ function handleRateArticle(value) {
 				class="bg-green-100 flex items-center rounded-[1rem] px-[1rem] py-[0.25rem] z-[20]"
 			>
 				<button href="" class="hover:bg-green-200 active:bg-green-300" @click.prevent="handleRateArticle(1)">
-					<i class="pi pi-icons pi-angle-double-up "></i>
+					<i class="pi pi-icons pi-arrow-down "></i>
                 </button>
 				<span class="mx-[0.25rem]">{{ props.article.rate }}</span>
 				<button href="" class="hover:bg-green-200 active:bg-green-300" @click.prevent="handleRateArticle(-1)">
-					<i class="pi pi-icons pi-angle-double-down"></i>
+					<i class="pi pi-icons pi-arrow-up"></i>
                 </button>
 			</span>
 			<a

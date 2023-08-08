@@ -60,9 +60,30 @@ onMounted(async() => {
 				class="mx-[1rem] mt-[1rem] rounded-[1rem] bg-green-50 p-[1rem] sticky top-[5rem]"
 			>
 				<span class="text-ntext font-black"
-					>TÁC GIẢ ĐƯỢC YÊU THÍCH</span
+					>Giới thiệu về tác giả</span
 				>
-				<template v-for="(v, i) in Array(5)" :key="i">
+                <div class="w-full my-[1rem]">
+                    <img class="rounded-[20rem] w-[6rem] h-[6rem] bg-green-300 mx-auto" src="https://styles.redditmedia.com/t5_4eeg41/styles/profileIcon_snoo8460fba9-9746-4794-8333-12daf4f03df1-headshot.png?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=22b939023fd586a770d041e080cd2a52a2ddb6b7" alt="">
+                </div>
+                <span class="text-ntext w-full block">
+                    <span class="font-black">
+                        Tên: 
+                    </span>
+                   &nbsp Anonymous
+                </span>
+                <span class="text-ntext w-full block">
+                    <span class="font-black">
+                        Email: 
+                    </span>
+                   &nbsp anonymous@gmail.com
+                </span>
+                <span class="text-ntext w-full block">
+                    <span class="font-black">
+                        Giới thiệu: 
+                    </span>
+                    &nbsp Chưa cập nhật
+                </span>
+				<!-- <template v-for="(v, i) in Array(5)" :key="i">
 					<a
 						href=""
 						class="flex hover:bg-green-100 py-[1rem] px-[0.5rem]"
@@ -86,7 +107,7 @@ onMounted(async() => {
 						</svg>
 						<span class="ml-[0.5rem]">R place: {{ i }}</span>
 					</a>
-				</template>
+				</template> -->
 			</div>
 		</div>
 	</div>

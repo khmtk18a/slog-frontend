@@ -13,11 +13,11 @@ export const useLSidebarStore = defineStore('lSidebar', {
         fetchHomeViewItems() {
             this.items = [
                 { 'label': 'Trang chủ', 'route': '/', 'type': 'button', 'icon': 'pi-home' },
-                { 'label': 'Phổ biến nhất', 'route': '/popular', 'type': 'button' },
+                { 'label': 'Phổ biến nhất', 'route': '/popular', 'type': 'button', 'icon': 'pi-arrow-up-right' },
                 { 'type': 'line' },
                 { 'label': 'THỂ LOẠI', 'type': 'title' },
-                { 'label': 'Công nghệ thông tin', 'route': '/technology', 'type': 'button' },
-                { 'label': 'Trò chơi', 'route': '/game', 'type': 'button' },
+                { 'label': 'Chưa cập nhật', 'route': '/technology', 'type': 'button', 'icon': 'pi-hashtag' },
+                { 'label': 'Chưa cập nhật', 'route': '/game', 'type': 'button', 'icon': 'pi-hashtag' },
                 {
                     'label': 'Công nghệ thông tin', 'child': [
                         { 'label': 'C++', 'route': 'cplus' },
@@ -44,6 +44,22 @@ export const useLSidebarStore = defineStore('lSidebar', {
         fetchUploadViewItems() {
             this.items = [
                 { 'label': 'Trang chủ', 'route': '/', 'type': 'button', 'icon': 'pi-home' },
+                { 'label': 'Tổng quan', 'route': '/popular', 'type': 'button', 'icon': 'pi-arrow-up-right' },
+                { 'type': 'line' },
+                { 'label': 'Bài viết', 'type': 'title' },
+                { 'label': 'Tổng quan', 'route': '/sumary', 'type': 'button', 'icon': 'pi-arrow-up-right' },
+                { 'label': 'Thêm bài viết', 'route': '/upload', 'type': 'button', 'icon': 'pi-arrow-up-right' },
+                { 'label': 'RESOURCES', 'type': 'title' },
+                { 'label': 'About me', 'route': '/about', 'type': 'button' }
+            ]
+        },
+        fetchSumaryView() {
+            this.items = [
+                { 'label': 'Trang chủ', 'route': '/', 'type': 'button', 'icon': 'pi-home' },
+                { 'label': 'Tổng quan', 'route': '/sumary', 'type': 'button', 'icon': 'pi-desktop' },
+                { 'type': 'line' },
+                { 'label': 'Bài viết', 'type': 'title' },
+                { 'label': 'Thêm bài viết', 'route': '/upload', 'type': 'button', 'icon': 'pi-plus' },
                 { 'label': 'RESOURCES', 'type': 'title' },
                 { 'label': 'About me', 'route': '/about', 'type': 'button' }
             ]
