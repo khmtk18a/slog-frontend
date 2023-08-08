@@ -15,7 +15,7 @@ const isHover = ref(false)
 		@click="lSidebarStore.open = false"
 	></div>
 	<div
-		class="fixed lsidebar-transition w-[20rem] bg-white z-[50] overflow-y-auto normal-scrollbar h-[calc(100vh-4rem)] border-r-[1px] border-green-200 "
+		class="fixed lsidebar-transition w-[20rem] bg-white z-[50] overflow-y-auto overflow-x-hidden normal-scrollbar h-[calc(100vh-4rem)] border-r-[1px] border-green-200 "
 		:class="{
 			'overflow-y-hidden': !isHover,
 			'max-lg:left-0': lSidebarStore.open,
@@ -90,6 +90,12 @@ const isHover = ref(false)
 							</template>
 						</ul>
 					</div>
+				</template>
+                <template  v-if="item.type == 'toggle'">
+                    <button @click="item.callback(item.label)" class="font-black active:text-green-500 w-[20rem]  text-center text-ntext my-[1rem]">
+                            {{item.label}}
+						
+                </button>
 				</template>
 			</li>
 		</ul>

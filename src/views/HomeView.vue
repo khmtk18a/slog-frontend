@@ -10,7 +10,7 @@ import {useLSidebarStore} from '../stores/lSidebar'
 const articlesStore = useArticlesStore()
 const lSidebarStore = useLSidebarStore()
 
-lSidebarStore.fetchHomeViewItems()
+lSidebarStore.fetchTags()
 
 onMounted(async() => {
     const options = {

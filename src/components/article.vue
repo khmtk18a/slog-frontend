@@ -41,7 +41,12 @@ function handleRateArticle(value) {
 				<span class="mx-[0.5rem]">•</span>
 				<span>{{ props.article.createAt }} h. ago</span>
 			</span>
-			<button class="text-red-500">Báo cáo</button>
+			<button class="text-red-500">
+                <i class="pi pi-icons pi-ellipsis-v"></i>
+            </button>
+            <!-- <div class=" w-[10rem] h-[20rem] bg-green-100">
+
+            </div> -->
 		</div>
 		<div ref="contentBoxRef" class="max-h-[25rem] overflow-y-hidden mt-[0.5rem]" >
 			<span class="text-ttext block font-black text-[1.2rem]"

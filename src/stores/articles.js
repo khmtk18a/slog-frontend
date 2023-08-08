@@ -71,7 +71,19 @@ export const useArticlesStore = defineStore('articles', {
              1) I still have to invest countless hours into the grind in order to get the rewards I paid money for,
              2) Two thirds of the battle pass are filled with random garbage I have absolutely NO use for like voice lines, sprays or photo mode poses,
              3) If life gets in the way and I can't invest 50 hours into the battle pass, I don't get the rewards I paid for at all (like not even at the end),
-             4) The grind is only as obscene as it is, because publishers (or more so devs, because they are the ones setting the numbers) want to keep the player engagement and investment high, show that to their investors and get additional money that way,`, isHiden: true, comments: 100, rate: 1020
+             4) The grind is only as obscene as it is, because publishers (or more so devs, because they are the ones setting the numbers) want to keep the player engagement and investment high, show that to their investors and get additional money that way,
+             1) I still have to invest countless hours into the grind in order to get the rewards I paid money for,
+             2) Two thirds of the battle pass are filled with random garbage I have absolutely NO use for like voice lines, sprays or photo mode poses,
+             3) If life gets in the way and I can't invest 50 hours into the battle pass, I don't get the rewards I paid for at all (like not even at the end),
+             4) The grind is only as obscen
+             1) I still have to invest countless hours into the grind in order to get the rewards I paid money for,
+             2) Two thirds of the battle pass are filled with random garbage I have absolutely NO use for like voice lines, sprays or photo mode poses,
+             3) If life gets in the way and I can't invest 50 hours into the battle pass, I don't get the rewards I paid for at all (like not even at the end),
+             4) The grind is only as obscen
+             1) I still have to invest countless hours into the grind in order to get the rewards I paid money for,
+             2) Two thirds of the battle pass are filled with random garbage I have absolutely NO use for like voice lines, sprays or photo mode poses,
+             3) If life gets in the way and I can't invest 50 hours into the battle pass, I don't get the rewards I paid for at all (like not even at the end),
+             4) The grind is only as obscen`, isHiden: true, comments: 100, rate: 1020
             }
         },
         fetchSubArticles() {
